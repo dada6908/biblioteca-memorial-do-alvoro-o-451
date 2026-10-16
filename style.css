@@ -1,0 +1,226 @@
+/* ==========================================
+   CONFIGURAÇÕES GERAIS / RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ==========================================
+   TELA DE LOGIN
+   ========================================== */
+.login-body {
+    background: #eef2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    color: #1e3c72;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #888;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.input-group input:focus {
+    border-color: #1e3c72;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(30, 60, 114, 0.1);
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    opacity: 0.95;
+}
+
+.error-message {
+    background-color: #fce8e6;
+    color: #a94442;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #f8d7da;
+}
+
+/* ==========================================
+   PAINEL INTERNO
+   ========================================== */
+.painel-body {
+    padding-bottom: 40px;
+}
+
+.navbar {
+    background-color: #1e3c72;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome-msg {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #555;
+}
+
+.main-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    border: 1px solid #e9ecef;
+}
+
+.main-card h3 {
+    color: #1e3c72;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* TABELAS */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    padding: 14px 16px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #dee2e6;
+    color: #495057;
+}
+
+tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+    transition: background 0.15s ease;
+}
+
+/* COMPONENTES */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.badge-user {
+    background-color: #cce5ff;
+    color: #004085;
+}
